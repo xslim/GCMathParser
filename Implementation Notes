@@ -1,0 +1,154 @@
+/*************************************************************************************************
+*
+*
+*			MacZoop - "the framework for the rest of us"		 
+*
+*
+*
+*			ZExpParser			-- MacZoop expression parser
+*
+*
+*			© 2000, Graham Cox
+*
+*			Updated for Cocoa/Obj-C, 2007
+*
+*
+*************************************************************************************************/
+
+/*
+
+********** IMPLEMENTATION NOTES *************
+
+
+ZExpParser implements a complete parser for any mathematical expression, written as
+a regular expression. It also supports variables and mathematical functions.
+
+ZExpParser is a simple object that hides the details of the parser, which itself was
+generated using the BISON parser generator tool. You create the object, pass the expression
+to be evaluated to the Evaluate() method, and it returns the numeric value of the result.
+
+Evaluate will throw an exception if there is a syntax error or other problem with the
+expression.
+
+
+Examples of valid regular expressions:			numerical output:
+
+"3+4"											7
+"5*6"											30
+"4+(3.5*8)"										32
+"100/3"											33.333333333
+"sin(0.5)"										0.479425538
+"2.5^3"											15.625
+"cos(1/20)+sin(1/30)+cos(1/50)"					2.031877428
+"(1+2.2)*(3.1+6.6)"								31.04
+"(2*(3/(4+(5-3))))"								1
+"sqrt(2)"										1.4142136
+
+All standard operators are supported, as follows:
+
++, -, *, /
+unary -
+^ raise a number to the power of the other
+% modulus
+
+In addition, the following mathematical functions are supported:
+
+sin, cos, tan, asin, acos, atan, log, log2, ln, exp, abs, sqrt, sinh, cosh, tanh, asinh, acosh, atanh,
+ceil, floor, round, trunc, rint, near, dtor, rtod
+
+Arguments to transcendental functions are in radians.
+dtor and rtod convert from degrees to radians and vice versa
+
+Expressions can contain parentheses to group subexpressions together, nested to any depth.
+Arguments to functions must be in parentheses. You can have as much extra whitespace in
+the expression as you want - it will all be ignored.
+
+log is the base 10 logarithm, ln is the natural (base e) logarithm. log2 is to base 2.
+exp is e to the power of the argument - to get the inverse of a base 10 log, simply
+use 10^x where x is the argument.
+
+All math is done in double precision floating point.
+
+######### variables #############
+
+expressions may contain variables. For example:
+
+"a+b"
+"cos( a )"
+"sin(1/a) + cos( 2/ wave )"
+
+any names are valid except those reserved for mathematical functions. All characters and
+case are significant. Variables are initialised to zero the first time they are referenced.
+The Evaluate() method can be used to assign values to them as follows:
+
+ep.Evaluate( "a=12.245" );
+
+here, a variable called "a" is being set to the value 12.245
+
+You can also directly set a variable from a numerical value using the SetSymbolValue() method, which will
+be generally faster. If variables are changing rapidly, for example in a graph plotting program, you should
+use this method to change the variables as the plot function loops.
+
+Variables exist for the lifetime of the parser object.
+
+The variable "pi" (also "¹") is predefined to be the value 3.141592654...
+
+######### using GCMathParser (Cocoa) ###########
+
+
+Very easy to use:
+
+
+double value = [GCMathParser evaluate:@"sin(1/34)+ 0.00245"];
+
+expressions in the Cocoa version are NSStrings, results are double precision as before
+
+to use variables, the parser object needs to be retained across invocations:
+
+GCMathParser* myParser = [[GCMathParser parser] retain];
+
+[myParser setSymbolValue:7.503 forKey:@"x"]; // can also be done slightly less efficiently using [myParser evaluate:@"x=7.503"];
+
+double y = [myParser evaluate:@"sin(x)"];
+
+Bad input strings result in an NSException being raised - you can trap syntax and other errors by catching this.
+
+If you don't need variables you can also make use of the included ultra-simple NSString category method:
+
+- (double) evaluateMath;
+
+use:
+
+NSString*	mathstr = @"3+4/5*6";
+double value = [mathstr evaluateMath];
+
+
+
+(previous notes for original C++ version follow)
+
+######### using ZExpParser ###########
+
+
+Very easy to use:
+
+ZExpParser		ep;
+
+
+double value = ep.Evaluate( "sin(1/34) + 0.00245" );
+
+
+
+--- or ----
+
+
+ZExpParser*		ep = new	ZExpParser();
+
+double v = ep->Evaluate( "1/34567" );
+
+
+Note that the expression you pass is a C string, and can be any length. It must be zero
+terminated. You should not include linebreaks in the string - it will not work.
+
+
+
+*/
