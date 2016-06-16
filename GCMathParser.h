@@ -6,7 +6,7 @@
 //  Copyright 2007 Apptree.net. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import "ZExpParser.h"
 
 
