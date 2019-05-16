@@ -7,43 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47228C901D11E95700DBD10E /* GCExpressionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 47228C8F1D11E95700DBD10E /* GCExpressionParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47228C9A1D11E96100DBD10E /* GCMathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82B7CF0C8444E40067F49F /* GCMathParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		47228C9B1D11E96600DBD10E /* ZExpParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF82B7330C843CC70067F49F /* ZExpParser.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		47228C9D1D11E9A900DBD10E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47228C9C1D11E9A900DBD10E /* Foundation.framework */; };
-		476E7D441D12D216004C26D2 /* GCMathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82B7CF0C8444E40067F49F /* GCMathParser.m */; };
-		476E7D451D12D21A004C26D2 /* ZExpParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF82B7330C843CC70067F49F /* ZExpParser.mm */; };
-		476E7D461D12D2AB004C26D2 /* GCMathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BF82B7CE0C8444E40067F49F /* GCMathParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		476E7D471D12D2B3004C26D2 /* ZExpParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BF82B7350C843CC70067F49F /* ZExpParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		84233886228D476800BE9EE4 /* GCExpressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233875228D476800BE9EE4 /* GCExpressionController.m */; };
+		84233888228D476800BE9EE4 /* GCMathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233876228D476800BE9EE4 /* GCMathParser.h */; };
+		8423388A228D476800BE9EE4 /* GCMathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233878228D476800BE9EE4 /* GCMathParser.m */; };
+		8423388B228D476800BE9EE4 /* GCMathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233878228D476800BE9EE4 /* GCMathParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8423388C228D476800BE9EE4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8423387A228D476800BE9EE4 /* MainMenu.nib */; };
+		8423388E228D476800BE9EE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8423387C228D476800BE9EE4 /* InfoPlist.strings */; };
+		84233892228D476800BE9EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233880228D476800BE9EE4 /* main.m */; };
+		84233894228D476800BE9EE4 /* ZExpParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233881228D476800BE9EE4 /* ZExpParser.h */; };
+		84233895228D476800BE9EE4 /* ZExpParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84233882228D476800BE9EE4 /* ZExpParser.mm */; };
+		84233896228D476800BE9EE4 /* ZExpParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84233882228D476800BE9EE4 /* ZExpParser.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84233897228D476800BE9EE4 /* GCExpressionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233884228D476800BE9EE4 /* GCExpressionParser.h */; };
+		84233898228D476800BE9EE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84233885228D476800BE9EE4 /* Info.plist */; };
+		8423389B228D484A00BE9EE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8423389A228D484A00BE9EE4 /* Foundation.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		BF82B7370C843CC70067F49F /* Implementation Notes in Resources */ = {isa = PBXBuildFile; fileRef = BF82B7340C843CC70067F49F /* Implementation Notes */; };
-		BF82B77E0C84408B0067F49F /* GCExpressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82B77D0C84408B0067F49F /* GCExpressionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		47228C8D1D11E95700DBD10E /* GCExpressionParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCExpressionParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47228C8F1D11E95700DBD10E /* GCExpressionParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCExpressionParser.h; sourceTree = "<group>"; };
-		47228C911D11E95700DBD10E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47228C9C1D11E9A900DBD10E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84233875228D476800BE9EE4 /* GCExpressionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCExpressionController.m; sourceTree = "<group>"; };
+		84233876228D476800BE9EE4 /* GCMathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMathParser.h; sourceTree = "<group>"; };
+		84233877228D476800BE9EE4 /* GCExpressionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCExpressionController.h; sourceTree = "<group>"; };
+		84233878228D476800BE9EE4 /* GCMathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMathParser.m; sourceTree = "<group>"; };
+		8423387B228D476800BE9EE4 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		8423387D228D476800BE9EE4 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8423387E228D476800BE9EE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84233880228D476800BE9EE4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84233881228D476800BE9EE4 /* ZExpParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZExpParser.h; sourceTree = "<group>"; };
+		84233882228D476800BE9EE4 /* ZExpParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZExpParser.mm; sourceTree = "<group>"; };
+		84233884228D476800BE9EE4 /* GCExpressionParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCExpressionParser.h; sourceTree = "<group>"; };
+		84233885228D476800BE9EE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8423389A228D484A00BE9EE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8D1107320486CEB800E47090 /* GCExpressionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCExpressionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF82B7330C843CC70067F49F /* ZExpParser.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = ZExpParser.mm; sourceTree = "<group>"; };
 		BF82B7340C843CC70067F49F /* Implementation Notes */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Implementation Notes"; sourceTree = "<group>"; };
-		BF82B7350C843CC70067F49F /* ZExpParser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ZExpParser.h; sourceTree = "<group>"; };
-		BF82B77C0C84408B0067F49F /* GCExpressionController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GCExpressionController.h; sourceTree = "<group>"; };
-		BF82B77D0C84408B0067F49F /* GCExpressionController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GCExpressionController.m; sourceTree = "<group>"; };
-		BF82B7CE0C8444E40067F49F /* GCMathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMathParser.h; sourceTree = "<group>"; };
-		BF82B7CF0C8444E40067F49F /* GCMathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMathParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47228C9D1D11E9A900DBD10E /* Foundation.framework in Frameworks */,
+				8423389B228D484A00BE9EE4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,17 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				BF82B77C0C84408B0067F49F /* GCExpressionController.h */,
-				BF82B77D0C84408B0067F49F /* GCExpressionController.m */,
-				BF82B7CE0C8444E40067F49F /* GCMathParser.h */,
-				BF82B7CF0C8444E40067F49F /* GCMathParser.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,51 +98,70 @@
 			isa = PBXGroup;
 			children = (
 				BF82B7340C843CC70067F49F /* Implementation Notes */,
-				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
-				47228C8E1D11E95700DBD10E /* GCExpressionParser */,
+				84233873228D476800BE9EE4 /* GCExpressionParser */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = GCExpressionParser;
 			sourceTree = "<group>";
 		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				29B97316FDCFA39411CA2CEA /* main.m */,
-				BF82B7350C843CC70067F49F /* ZExpParser.h */,
-				BF82B7330C843CC70067F49F /* ZExpParser.mm */,
-			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8D1107310486CEB800E47090 /* Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47228C9C1D11E9A900DBD10E /* Foundation.framework */,
+				8423389A228D484A00BE9EE4 /* Foundation.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		47228C8E1D11E95700DBD10E /* GCExpressionParser */ = {
+		84233873228D476800BE9EE4 /* GCExpressionParser */ = {
 			isa = PBXGroup;
 			children = (
-				47228C8F1D11E95700DBD10E /* GCExpressionParser.h */,
-				47228C911D11E95700DBD10E /* Info.plist */,
+				84233874228D476800BE9EE4 /* Classes */,
+				8423387F228D476800BE9EE4 /* Other Sources */,
+				84233879228D476800BE9EE4 /* Resources */,
+				84233883228D476800BE9EE4 /* GCExpressionParser */,
+			);
+			path = GCExpressionParser;
+			sourceTree = "<group>";
+		};
+		84233874228D476800BE9EE4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84233877228D476800BE9EE4 /* GCExpressionController.h */,
+				84233875228D476800BE9EE4 /* GCExpressionController.m */,
+				84233876228D476800BE9EE4 /* GCMathParser.h */,
+				84233878228D476800BE9EE4 /* GCMathParser.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		84233879228D476800BE9EE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8423387E228D476800BE9EE4 /* Info.plist */,
+				8423387C228D476800BE9EE4 /* InfoPlist.strings */,
+				8423387A228D476800BE9EE4 /* MainMenu.nib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8423387F228D476800BE9EE4 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84233880228D476800BE9EE4 /* main.m */,
+				84233881228D476800BE9EE4 /* ZExpParser.h */,
+				84233882228D476800BE9EE4 /* ZExpParser.mm */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		84233883228D476800BE9EE4 /* GCExpressionParser */ = {
+			isa = PBXGroup;
+			children = (
+				84233884228D476800BE9EE4 /* GCExpressionParser.h */,
+				84233885228D476800BE9EE4 /* Info.plist */,
 			);
 			path = GCExpressionParser;
 			sourceTree = "<group>";
@@ -164,9 +173,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47228C901D11E95700DBD10E /* GCExpressionParser.h in Headers */,
-				476E7D461D12D2AB004C26D2 /* GCMathParser.h in Headers */,
-				476E7D471D12D2B3004C26D2 /* ZExpParser.h in Headers */,
+				84233894228D476800BE9EE4 /* ZExpParser.h in Headers */,
+				84233897228D476800BE9EE4 /* GCExpressionParser.h in Headers */,
+				84233888228D476800BE9EE4 /* GCMathParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +237,7 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* GCExpressionParser */;
 			projectDirPath = "";
@@ -251,9 +261,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				BF82B7370C843CC70067F49F /* Implementation Notes in Resources */,
+				8423388E228D476800BE9EE4 /* InfoPlist.strings in Resources */,
+				84233898228D476800BE9EE4 /* Info.plist in Resources */,
+				8423388C228D476800BE9EE4 /* MainMenu.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47228C9A1D11E96100DBD10E /* GCMathParser.m in Sources */,
-				47228C9B1D11E96600DBD10E /* ZExpParser.mm in Sources */,
+				8423388B228D476800BE9EE4 /* GCMathParser.m in Sources */,
+				84233896228D476800BE9EE4 /* ZExpParser.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,30 +284,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				476E7D451D12D21A004C26D2 /* ZExpParser.mm in Sources */,
-				476E7D441D12D216004C26D2 /* GCMathParser.m in Sources */,
-				BF82B77E0C84408B0067F49F /* GCExpressionController.m in Sources */,
+				8423388A228D476800BE9EE4 /* GCMathParser.m in Sources */,
+				84233895228D476800BE9EE4 /* ZExpParser.mm in Sources */,
+				84233892228D476800BE9EE4 /* main.m in Sources */,
+				84233886228D476800BE9EE4 /* GCExpressionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+		8423387A228D476800BE9EE4 /* MainMenu.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				8423387B228D476800BE9EE4 /* English */,
 			);
 			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		8423387C228D476800BE9EE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8423387D228D476800BE9EE4 /* English */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,7 +354,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = GCExpressionParser/Info.plist;
+				INFOPLIST_FILE = GCExpressionParser/GCExpressionParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -394,7 +405,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = GCExpressionParser/Info.plist;
+				INFOPLIST_FILE = GCExpressionParser/GCExpressionParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
