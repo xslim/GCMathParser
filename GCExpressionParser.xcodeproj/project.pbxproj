@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8419F7E12293EB1600B1A7FF /* GCExpressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233875228D476800BE9EE4 /* GCExpressionController.m */; };
 		84233886228D476800BE9EE4 /* GCExpressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233875228D476800BE9EE4 /* GCExpressionController.m */; };
 		84233888228D476800BE9EE4 /* GCMathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233876228D476800BE9EE4 /* GCMathParser.h */; };
 		8423388A228D476800BE9EE4 /* GCMathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233878228D476800BE9EE4 /* GCMathParser.m */; };
@@ -273,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8419F7E12293EB1600B1A7FF /* GCExpressionController.m in Sources */,
 				8423388B228D476800BE9EE4 /* GCMathParser.m in Sources */,
 				84233896228D476800BE9EE4 /* ZExpParser.mm in Sources */,
 			);
