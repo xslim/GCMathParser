@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		84233886228D476800BE9EE4 /* GCExpressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233875228D476800BE9EE4 /* GCExpressionController.m */; };
-		84233888228D476800BE9EE4 /* GCMathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233876228D476800BE9EE4 /* GCMathParser.h */; };
+		84233888228D476800BE9EE4 /* GCMathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233876228D476800BE9EE4 /* GCMathParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8423388A228D476800BE9EE4 /* GCMathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233878228D476800BE9EE4 /* GCMathParser.m */; };
 		8423388B228D476800BE9EE4 /* GCMathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233878228D476800BE9EE4 /* GCMathParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8423388C228D476800BE9EE4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8423387A228D476800BE9EE4 /* MainMenu.nib */; };
 		8423388E228D476800BE9EE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8423387C228D476800BE9EE4 /* InfoPlist.strings */; };
 		84233892228D476800BE9EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84233880228D476800BE9EE4 /* main.m */; };
-		84233894228D476800BE9EE4 /* ZExpParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233881228D476800BE9EE4 /* ZExpParser.h */; };
+		84233894228D476800BE9EE4 /* ZExpParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233881228D476800BE9EE4 /* ZExpParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84233895228D476800BE9EE4 /* ZExpParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84233882228D476800BE9EE4 /* ZExpParser.mm */; };
 		84233896228D476800BE9EE4 /* ZExpParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84233882228D476800BE9EE4 /* ZExpParser.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		84233897228D476800BE9EE4 /* GCExpressionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233884228D476800BE9EE4 /* GCExpressionParser.h */; };
+		84233897228D476800BE9EE4 /* GCExpressionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84233884228D476800BE9EE4 /* GCExpressionParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8423389B228D484A00BE9EE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8423389A228D484A00BE9EE4 /* Foundation.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		BF82B7370C843CC70067F49F /* Implementation Notes in Resources */ = {isa = PBXBuildFile; fileRef = BF82B7340C843CC70067F49F /* Implementation Notes */; };
@@ -173,8 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84233894228D476800BE9EE4 /* ZExpParser.h in Headers */,
-				84233897228D476800BE9EE4 /* GCExpressionParser.h in Headers */,
 				84233888228D476800BE9EE4 /* GCMathParser.h in Headers */,
+				84233897228D476800BE9EE4 /* GCExpressionParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
